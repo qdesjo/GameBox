@@ -5,18 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SNT</title>
-    <script src="index.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <nav class="navbar">
-    <div></div>
-    <a href="#chatbot_explain">Notre chatbot</a>
-    <a href="#jeux_global">Nos jeux</a>
-    <a href="jeux.html">Jouer</a>
-  </nav>
 
   <body>
-    <div id="chatbot" >
+    <nav class="navbar">
+      <div></div>
+      <a href="#chatbot_explain">Notre chatbot</a>
+      <a href="#jeux_global">Nos jeux</a>
+
+      <button id="menu-button">Menu</button>
+      <div id="menu-items">
+        <!-- Contenu du menu déroulant -->
+        <a href="/Jeux/Tétris/index.html">Tétris</a>
+        <a href="/Jeux/Pong/index.html">Pong</a>
+        <a href="/Jeux/Mastermind/index.html">Mastermind</a>
+      </div>
+    </nav>
+
+    <div id="chatbot">
       <button id="chatbot_button"></button>
     </div>
     <h1>Seconde B - Hautefeuille : Le meilleur groupe</h1>
@@ -53,4 +60,5 @@
     </p>
     <a href="https://www.paypal.com/paypalme/Qdesjobert">Nous soutenir !</a>
   </footer>
+  <script src="index.js"></script>
 </html>

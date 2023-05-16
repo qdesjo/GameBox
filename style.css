@@ -38,7 +38,7 @@ p {
   display: flex;
   background-color: #fff;
   justify-content: center;
-  position: fixed;
+  position: relative;
   margin-top: auto;
   height: 5%;
   z-index: 9999;
@@ -64,6 +64,38 @@ p {
   color: chocolate;
 }
 
+#menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#menu-items {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #f9f9f9;
+  padding: 8px;
+  visibility: hidden; /* Ajout de la visibilité à hidden pour l'animation */
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* Ajout de la transition */
+}
+
+#menu-items a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: #333;
+}
+#menu-button:hover + #menu-items,
+#menu-items:hover {
+  opacity: 1; /* Changement de l'opacité à 1 au survol du bouton ou du menu déroulant */
+  visibility: visible; /* Changement de la visibilité à visible au survol du bouton ou du menu déroulant */
+  transition-delay: 0s; /* Réinitialisation du délai de transition */
+}
+#menu-items a:hover {
+  background-color: #e5e5e5;
+}
 /*----------------------------------BUTTON-----------------------------------*/
 
 #chatbot_button {

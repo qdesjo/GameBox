@@ -1,24 +1,34 @@
 <html>
-<head>
-    <title>Pong</title>
+  <head> 
+       <title>Pong</title>
+    <link rel="stylesheet" href="/style.css" />
+
+    <nav class="navbar" style="position:fixed">
+        <div></div>
+        <a href="/index.html">GamesBox</a>
+        <a href="/Jeux/Tétris/index.html">Tétris</a>
+        <a href="/Jeux/Pong/index.html">Pong</a>
+        <a href="/Jeux/Mastermind/index.html">Mastermind</a>
+        </div>
+      </nav>
     <style>
-        body {
-            align-items: center;
-            background: #202020;
-            display: flex;
-            margin: 0;
-        }
-        canvas {
-            border: solid 1px #fff;
-            border-left: none;
-            border-right: none;
-            image-rendering: pixelated;
-            width: 100%;
-        }
+      body {
+        align-items: center;
+        background: #202020;
+        display: flex;
+        margin: 0;
+      }
+      canvas {
+        border: solid 1px #fff;
+        border-left: none;
+        border-right: none;
+        image-rendering: pixelated;
+        width: 100%;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <canvas id="pong" width="600" height="400" />
     <script src="pong.js"></script>
-</body>
+  </body>
 </html>
