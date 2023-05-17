@@ -63,7 +63,7 @@ class Pong {
     this._canvas = canvas;
     this._context = canvas.getContext("2d");
 
-    this.initialSpeed = 250;
+    this.initialSpeed = 300;
 
     this.ball = new Ball();
 
@@ -127,7 +127,8 @@ class Pong {
       player.top < ball.bottom &&
       player.bottom > ball.top
     ) {
-      ball.vel.x = -ball.vel.x * 2.05;
+      //Vitesse de la balle
+      ball.vel.x = -ball.vel.x * 1.15;
       const len = ball.vel.len;
       ball.vel.y += player.vel.y * 0.2;
       ball.vel.len = len;

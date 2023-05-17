@@ -87,14 +87,18 @@ p {
   text-decoration: none;
   color: #333;
 }
+#menu-items a:hover {
+  background-color: #ffffff;
+}
+#menu-button:hover {
+  font-size: x-large;
+  color: chocolate;
+}
 #menu-button:hover + #menu-items,
 #menu-items:hover {
   opacity: 1; /* Changement de l'opacité à 1 au survol du bouton ou du menu déroulant */
   visibility: visible; /* Changement de la visibilité à visible au survol du bouton ou du menu déroulant */
   transition-delay: 0s; /* Réinitialisation du délai de transition */
-}
-#menu-items a:hover {
-  background-color: #e5e5e5;
 }
 /*----------------------------------BUTTON-----------------------------------*/
 
@@ -106,7 +110,7 @@ p {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-image: url(htf.png);
+  background-image: url(gamebox.png);
   background-size: contain;
 }
 #chatbot_button:hover {
