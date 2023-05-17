@@ -65,8 +65,13 @@ p {
 }
 
 #menu-button {
-  background: none;
-  border: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-style: initial;
+  font-size: large;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 10px;
   cursor: pointer;
 }
 
@@ -116,6 +121,11 @@ p {
 #chatbot_button:hover {
   transform: scale(1.5);
   transition: transform 0.2s ease-in-out;
+}
+
+#thanks {
+  color: firebrick;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /* -----------------------------------DINO-------------------------- */
 .obstacle {
