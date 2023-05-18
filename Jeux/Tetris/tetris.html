@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tétris</title>
+    <link rel="stylesheet" href="tetris.css" />
+    <link rel="stylesheet" href="/style.css">
+  </head>
+
+  <body onkeydown="storeKey(event)">
+
+    <nav class="navbar" style="position:fixed">
+      <div></div>
+      <a href="/index.html">GameBox</a>
+      <a href="/Jeux/Tétris/index.html">Tétris</a>
+      <a href="/Jeux/Pong/pong.html">Pong</a>
+      <a href="/Jeux/Mastermind/mastermind.html">Mastermind</a>
+      </div>
+    </nav>
+
+    <div id="game_box">
+      <div id="game_screen">
+        <canvas
+          id="canvas"
+          width="432"
+          height="528"
+          style="border: 0px solid #000000"
+        >
+        </canvas>
+      </div>
+    </div>
+
+    <div id="instructions">
+      <h1>Instructions.</h1>
+      <ul>
+        <li><b>Flèche du haut</b> = Rotation.</li>
+        <li><b>Flèche de gauche</b> = Gauche.</li>
+        <li><b>Flèche de droite</b> = Droite.</li>
+        <li><b>Flèche du bas</b> = Déscente rapide.</li>
+        <li><b>Espace</b> = Pièce en bas.</li>
+        <li>
+          <b><span id="score">SCORE: 0.</span></b>
+        </li>
+      </ul>
+    </div>
+
+    <script src="tetris.js"></script>
+  </body>
+</html>
