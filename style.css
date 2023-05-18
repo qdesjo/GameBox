@@ -45,6 +45,7 @@ p {
   top: 0;
   left: 0;
   right: 0;
+  border-radius: 10px;
 }
 .navbar + * {
   margin-top: 50px;
@@ -79,7 +80,7 @@ p {
   display: none;
   position: absolute;
   top: 100%;
-  right: 0;
+  right: 10%;
   background-color: #f9f9f9;
   padding: 8px;
   visibility: hidden; /* Ajout de la visibilité à hidden pour l'animation */
