@@ -15,24 +15,28 @@ let scoreCounter = () => {
   score.innerHTML = `Score <b>${playerScore}</b>`;
 };
 //Démarage de la partie
+let demarrage = true;
 window.addEventListener("keydown", (start) => {
-  if (start.code == "Space") {
+  if (start.code == "Space" && demarrage == true) {
     gameOver.style.display = "none";
+    demarrage = false;
     block.classList.add("blockActive");
     road.firstElementChild.style.animation = "roadAnimate 1.5s linear infinite";
     cloud.firstElementChild.style.animation =
       "cloudAnimate 50s linear infinite";
 
     //Setup du Score
-    let playerScore = 0;
+
+    playerScore = 0;
     interval = setInterval(scoreCounter, 200);
   }
 });
 
 //Saut du dino
 
-window.addEventListener("keydown", (e) => {
-  if (e.key == "ArrowUp") {
+window.addEventListener("keydown", (start) => {
+  // console.log(e)
+  if (start.code == "ArrowUp" || start.key == " ") {
     if (dino.classList != "dinoActive") {
       dino.classList.add("dinoActive");
       //Retire la classe après 0.5 sec
@@ -52,6 +56,7 @@ let result = setInterval(() => {
 
   if (dinoBottom <= 90 && blockLeft >= 20 && blockLeft <= 145) {
     gameOver.style.display = "block";
+    demarrage = true;
     block.classList.remove("blockActive");
     road.firstElementChild.style.animation = "none";
     cloud.firstElementChild.style.animation = "none";
